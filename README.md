@@ -54,10 +54,6 @@ mvn spring-boot:run
 
 A aplicação estará disponível em `http://localhost:8080`.
 
-## Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## Autor
 
 Desenvolvido por Rafael Vitor de Oliveira. [LinkedIn](https://www.linkedin.com/in/rafaelvitor2/)
