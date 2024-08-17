@@ -13,6 +13,18 @@ A API oferece as seguintes funcionalidades:
 - Exclusão de aluno por ID
 - Listagem de todos os alunos
 
+## Tratamento de Exceções
+
+A aplicação inclui validações e tratamento de exceções para garantir a integridade dos dados de `AlunoEntity`. As principais exceções tratadas incluem:
+
+- **Aluno com ID não encontrado:** Quando o ID do aluno não é encontrado no banco de dados, uma exceção é lançada com a mensagem `"Aluno com ID {id} não encontrado"`.
+- **ID nulo na atualização:** Caso o ID do aluno seja nulo ao tentar atualizar os dados, uma exceção é lançada com a mensagem `"ID do aluno não pode ser nulo para atualização"`.
+- **Nome inválido:** O nome do aluno é obrigatório e deve ter entre 3 e 50 caracteres. Caso contrário, uma exceção é lançada.
+- **Idade inválida:** A idade do aluno deve ser maior que 0. Uma exceção é lançada se a idade for nula ou menor/igual a 0.
+- **Notas inválidas:** As notas dos semestres devem estar entre 0 e 10. Se as notas estiverem fora desse intervalo, uma exceção é lançada.
+- **Nome do professor inválido:** O nome do professor é obrigatório e deve ter entre 3 e 50 caracteres. Se não atender a esses critérios, uma exceção é lançada.
+- **Número da sala inválido:** O número da sala é obrigatório e deve ter entre 1 e 10 caracteres. Uma exceção é lançada caso essas condições não sejam atendidas.
+
 ## Tecnologias Utilizadas
 
 - Java 17
